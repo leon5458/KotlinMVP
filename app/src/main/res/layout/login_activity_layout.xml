@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <EditText
+        android:id="@+id/accout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="请输入账号"
+        android:background="@null"
+        android:textColorHint="#999999"
+        android:maxLines="1"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="150dp"/>
+
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="请输入密码"
+        android:background="@null"
+        android:textColorHint="#999999"
+        android:maxLines="1"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/accout"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"/>
+
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:text="登陆"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/pwd"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="30dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/login_shape"/>
+
+</android.support.constraint.ConstraintLayout>
